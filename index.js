@@ -5,7 +5,6 @@ This file glues it all together.
 
 var Fritzl = require('./lib/fritzl');
 var Utils = require('./lib/utils');
-var Utils = require("./lib/utils");
 
 function hd(address, options) {
 	console.log(Utils.hexdump(ptr(address), options));
