@@ -19,6 +19,7 @@ Fritzl.hookDecryption();
 Fritzl.hookEncryption();
 Fritzl.hookHMAC();
 Fritzl.hookKeygen();
+Fritzl.hookGoEncryption();
 
 global.Fritzl = Fritzl;
 global.Utils = Utils;
