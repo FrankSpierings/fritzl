@@ -4,7 +4,7 @@
 
 ### How to use
 
-- Modify the `index.js` to suite your needs.
+- Modify the `index.js` to suit your needs.
 - Use `npm install` to install the dependencies.
 - Use `frida-compile`: `frida-compile index.js -o compiled.js`.
 - Load the compiled file: `frida -f </path/to/someapplication> -F -l compiled.js`.
