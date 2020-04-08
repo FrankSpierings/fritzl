@@ -4,6 +4,7 @@ This file glues it all together.
 "use strict";
 
 var Fritzl = require('./lib/fritzl');
+var Golang = require('./lib/golang');
 var Utils = require('./lib/utils');
 
 function hd(address, options) {
@@ -14,16 +15,9 @@ function ts(address) {
 	console.log(Utils.telescope(ptr(address)));
 }
 
-Fritzl.disablePinning();
-Fritzl.hookDecryption();
-Fritzl.hookEncryption();
-Fritzl.hookHMAC();
-Fritzl.hookKeygen();
-Fritzl.hookGoEncryption();
+Fritzl.hd = hd;
+Fritzl.ts = ts;
+Fritzl.Golang = Golang;
+Fritzl.Utils = Utils;
 
-global.Fritzl = Fritzl;
-global.Utils = Utils;
-global.hd = hd;
-global.ts = ts;
-
-console.log(Utils.colors.green('[+] Loaded'));
+module.exports = Fritzl;
