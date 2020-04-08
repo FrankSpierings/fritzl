@@ -11,8 +11,8 @@ function hd(address, options) {
 	console.log(Utils.hexdump(ptr(address), options));
 }
 
-function ts(address) {
-	console.log(Utils.telescope(ptr(address)));
+function ts(address, max) {
+	console.log(Utils.telescope(ptr(address, max)));
 }
 
 Fritzl.hd = hd;
