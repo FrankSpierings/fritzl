@@ -12,7 +12,7 @@ function hd(address, options) {
 }
 
 function ts(address, max) {
-	console.log(Utils.telescope(ptr(address, max)));
+	console.log(Utils.telescope(ptr(address), max));
 }
 
 Fritzl.hd = hd;
