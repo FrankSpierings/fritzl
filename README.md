@@ -47,6 +47,7 @@ console.log('Regex example: ' + JSON.stringify(Golang.findSymbolsByPattern(/decr
 ```
 
 - Compile: `node_modules/.bin/frida-compile index.js -o compiled.js`.
+- Usage example: `frida --no-pause -l compiled.js -f $(which curl) -- https://www.google.com`
 
 ### Notice
 
