@@ -7,8 +7,8 @@ var Fritzl = require('./lib/fritzl');
 var Golang = require('./lib/golang');
 var Utils = require('./lib/utils');
 
-function hd(address, options) {
-	console.log(Utils.hexdump(ptr(address), options));
+function hd(target, options) {
+	console.log(Utils.hexdump(target, options));
 }
 
 function ts(address, max) {
